@@ -290,7 +290,7 @@ func main() {
 
 			// Iterate through the cursor
 			for cur.Next(context.TODO()) {
-
+				//in and out are given dummy data
 				in, _ := time.Parse(time.RFC822, "01 Jan 15 20:00 UTC")
 				out, _ := time.Parse(time.RFC822, "01 Jan 17 10:00 UTC")
 				var timeelem Meeting
