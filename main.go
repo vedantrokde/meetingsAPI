@@ -317,7 +317,8 @@ func main() {
 
 	http.HandleFunc("/meetings?start=<start time here>&end=<end time here>", meetingsThroughTimeframe)
 	log.Fatal(http.ListenAndServe(":8080", nil))
-
+	
+	//Disconnecting 
 	err = client.Disconnect(context.TODO())
 
 	if err != nil {
